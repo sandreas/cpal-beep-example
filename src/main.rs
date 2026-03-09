@@ -136,7 +136,7 @@ where
     let err_fn = |err| eprintln!("an error occurred on stream: {err}");
 
     let stream = device.build_output_stream(
-        config,
+        &config,
         move |data: &mut [T], _: &cpal::OutputCallbackInfo| {
             write_data(data, channels, &mut next_value)
         },
