@@ -5,3 +5,8 @@ version = 4
 [[package]]
 name = "cpal-beep-example"
 version = "0.1.0"
+
+[[patch.unused]]
+name = "cpal"
+version = "0.17.3"
+source = "git+file:///home/andreas/projects/sandreas/cpal#4c8a951ce8719fe799c4f466c89306d086dcb0fa"
